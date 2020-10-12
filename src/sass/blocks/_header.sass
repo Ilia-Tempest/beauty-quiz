@@ -1,0 +1,142 @@
+.header
+  background-image: url(../img/header/background.png)
+  background-repeat: no-repeat
+  background-position: right
+  padding-top: 80px
+  padding-bottom: 170px
+  background-size: cover
+  &-title
+    text-shadow: -4px 3px 0 rgba(152, 39, 152, 0.31)
+    color: #982798
+    font-family: "Segoe UI", sans-serif
+    font-size: 48px
+    font-weight: 400
+    margin-bottom: 220px
+  &-item
+    display: flex
+    flex-direction: column
+    margin-left: 75px
+  &-info
+    display: flex
+    align-items: flex-start
+    align-self: flex-end
+    margin-top: 11px
+    &__text
+      color: #090909
+      font-family: "Segoe UI Semibold"
+      font-size: 36px
+      font-weight: 400
+      line-height: 48px
+      margin-left: 16px
+      max-width: 684px
+  &-text
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    &__title
+      text-shadow: -4px 4px 5px rgba(155, 31, 31, 0.13)
+      color: #a12e2e
+      font-family: "Segoe UI"
+      font-size: 72px
+      font-weight: 700
+      text-transform: uppercase
+      display: block
+    &__italic
+      font-family: "Segoe UI Semibold"
+      font-size: 60px
+      font-weight: 400
+      color: #a12e2e
+      margin-top: 45px
+    &__number
+      font-family: "Segoe UI"
+      font-weight: 700
+    &__text
+      color: #161616
+      font-family: "Segoe UI Semibold"
+      font-size: 36px
+      font-weight: 400
+      line-height: 36px
+      display: inline-block
+      margin-bottom: 50px
+      margin-top: 110px
+      max-width: 743px
+    &__bold
+      font-family: "Segoe UI"
+      font-weight: 700
+      display: inline-block
+@media (max-width: 1840px)
+  .header
+    padding-bottom: 85px
+
+@media (max-width: 1000px)
+  .header
+    background-size: cover
+    background-position: center
+    &-title
+      margin-bottom: 100px
+    &-item
+      align-items: center
+      margin-left: 0px
+    &-info
+      align-self: center
+      margin-top: 30px
+
+@media (max-width: 768px)
+  .header
+    
+    &-title
+      margin-bottom: 50px
+    &-info
+      &__text
+        font-size: 30px
+    &-text
+      &__title
+        font-size: 48px
+      &__italic
+        font-size: 48px
+        margin-top: 40px
+      &__text
+        font-size: 30px
+        margin-top: 40px
+        margin-bottom: 40px
+
+@media (max-width: 600px)
+  .header
+    &-info
+      &__text
+        font-size: 24px
+    &-text
+      &__text
+        font-size: 24px
+
+@media (max-width: 500px)
+  .header
+    &-title
+      font-size: 36px
+    &-info
+      &__text
+        font-size: 20px
+        margin-left: 0px
+      &__check
+        display: none
+    &-text
+      &__title
+        font-size: 36px
+      &__italic
+        font-size: 36px
+      &__text
+        font-size: 20px
+@media (max-width: 350px)
+  .header
+    &-title
+      font-size: 30px
+    &-info
+      &__text
+        font-size: 16px
+    &-text
+      &__title
+        font-size: 30px
+      &__italic
+        font-size: 30px
+      &__text
+        font-size: 16px

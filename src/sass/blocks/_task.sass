@@ -1,0 +1,102 @@
+.section-task
+  margin-top: 100px
+  padding-top: 130px
+  padding-bottom: 85px
+  background-image: url(../img/task/background.jpg)
+  background-size: contain
+  background-repeat: no-repeat
+  background-position: right
+  background-color: rgba(215, 150, 194, 0.05);
+.task
+  &-title
+    color: #ab4c4b
+    font-family: "Segoe UI"
+    font-size: 48px
+    font-weight: 700
+    line-height: 72px
+    max-width: 865px
+  &-all
+    display: flex
+    flex-direction: column
+    margin-top: 92px
+  &-button
+    align-self: flex-end
+  &-item
+    display: flex
+    align-items: flex-start
+    margin-top: 75px
+    &:first-child
+      margin-top: 0px
+    &__text
+      color: #000000
+      font-family: "Segoe UI"
+      font-size: 40px
+      font-weight: 400
+      margin-left: 48px
+    &__end
+      line-height: 72px
+
+@media (max-width: 1500px)
+  .section-task
+    background-image: none
+
+@media (max-width: 1050px)
+  .section-task
+    margin-top: 50px
+    padding-top: 50px
+  .task
+    &-title
+      width: auto
+    &-all
+      align-items: flex-start
+    &-button
+      align-self: flex-start
+      margin-top: 40px
+    &-item
+      margin-top: 50px
+      &__text
+        font-size: 30px
+
+@media (max-width: 768px)
+  .section-task
+    margin-top: 30px
+    padding-top: 30px
+  .task
+    &-title
+      font-size: 36px
+    &-item
+      &__img
+        width: 50px
+      &__text
+        font-size: 24px
+        margin-left: 30px
+      &__end
+        line-height: 30px
+
+@media (max-width: 500px)
+  .task
+    &-all
+      margin-top: 60px
+    &-item
+      margin-top: 40px
+      &__text
+        font-size: 20px
+        margin-left: 20px
+    &-title
+      font-size: 30px
+      line-height: 46px
+  
+@media (max-width: 400px)
+  .task
+    &-title
+      font-size: 26px
+
+@media (max-width: 350px)
+  .task
+    &-title
+      font-size: 24px
+    &-button
+      align-self: center
+    &-item
+      &__text
+        font-size: 16px

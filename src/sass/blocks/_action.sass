@@ -1,0 +1,137 @@
+.section-action
+  padding-top: 98px
+  padding-bottom: 70px
+  background-color: rgba(215, 150, 194, 0.05)
+.action 
+  &-title
+    color: #ab4c4b
+    font-family: "Segoe UI Semibold", sans-serif
+    font-size: 48px
+    font-weight: 400
+    line-height: 72px
+    max-width: 590px
+    margin-bottom: 125px
+    &__black
+      font-weight: 700
+      font-family: "Segoe UI", sans-serif
+  &-block
+    display: flex
+    flex-direction: column
+  &-list
+    display: flex
+    justify-content: space-around
+    align-items: center
+    &__nav1
+      align-self: flex-end
+      margin-top: 40px
+      margin-bottom: 40px
+    &__nav2
+      align-self: flex-start
+      margin-top: 40px
+      margin-bottom: 40px
+    &__nav3
+      align-self: flex-end
+      margin-top: 40px
+      margin-bottom: 40px
+    &:last-child
+      justify-content: space-around
+  &-item
+    display: flex
+    align-items: center
+  &-button
+    margin-right: 370px
+  &-number
+    color: #ab4c4b
+    font-family: "Segoe UI Semibold", sans-serif
+    font-size: 80px
+    font-weight: 400
+    margin-right: 40px
+  &-text
+    font-family: "Segoe UI", sans-serif
+    font-weight: 400
+    color: #000000
+    font-size: 30px
+    line-height: 48px
+    max-width: 432px
+    &__bold
+      font-family: "Segoe UI Semibold", sans-serif
+      font-weight: 600
+
+@media (max-width: 1400px)
+  .action
+    &-nav
+      margin-left: 20px
+      margin-right: 40px
+    &-button
+      margin-right: 0px
+    &-list
+      justify-content: space-between
+      &:last-child
+        justify-content: space-between
+      
+@media (max-width: 1140px)
+  .action
+    &-text
+      font-size: 24px
+    &-button
+      margin-right: 50px
+
+@media (max-width: 1100px)
+  .action
+    &-title
+      margin-bottom: 60px
+
+@media (max-width: 1020px)
+  .action
+    &-button
+      margin-right: 0px
+    &-nav
+      display: none
+    &-item
+      margin-top: 50px
+      &__first
+        margin-top: 0px
+    &-list
+      margin-top: 0px
+      flex-direction: column
+      align-items: center
+      &__nav1
+        display: none
+      &__nav2
+        display: none
+      &__nav3
+        display: none
+
+@media (max-width: 768px)
+  .section-action
+    padding-top: 50px
+    padding-bottom: 50px
+  .action
+    &-title
+      font-size: 36px
+      margin-bottom: 60px
+      width: auto
+
+@media (max-width: 500px)
+  .action
+    &-title
+     font-size: 26px
+     line-height: 46px
+    &-item
+      margin-top: 40px
+      &__first
+        margin-top: 0px
+    &-text
+      font-size: 20px
+      line-height: 30px
+    &-number
+      font-size: 50px
+      margin-right: 25px
+
+@media (max-width: 350px)
+  .action
+    &-title
+      font-size: 24px
+    &-text
+      font-size: 16px
+      line-height: 26px

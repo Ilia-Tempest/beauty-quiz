@@ -1,0 +1,2030 @@
+@charset "UTF-8";
+/*Стили для шрифтов*/
+@font-face {
+  font-family: 'Segoe UI Regular';
+  src: url("../fonts/Regular/SegoeUI.eot");
+  src: url("../fonts/Regular/SegoeUI.eot?#iefix") format("embedded-opentype"), url("../fonts/Regular/SegoeUI.woff") format("woff"), url("../fonts/Regular/SegoeUI.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe UI Semibold';
+  src: url("../fonts/Semibold/SegoeUI-SemiBold.eot");
+  src: url("../fonts/Semibold/SegoeUI-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Semibold/SegoeUI-SemiBold.woff") format("woff"), url("../fonts/Semibold/SegoeUI-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe UI Bold';
+  src: url("../fonts/Bold/SegoeUI-Bold.eot");
+  src: url("../fonts/Bold/SegoeUI-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Bold/SegoeUI-Bold.woff") format("woff"), url("../fonts/Bold/SegoeUI-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*Стили для normalize*/
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/*Стили для function*/
+img {
+  text-decoration: none;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-law {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: rgba(215, 150, 194, 0.05);
+}
+
+.law-a {
+  font-family: "Segoe UI";
+  font-size: 48px;
+  color: black;
+  margin-bottom: 50px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.law-text {
+  font-family: "Segoe UI";
+  font-size: 36px;
+}
+
+.container {
+  max-width: 1660px;
+  margin: auto;
+  width: 90%;
+}
+
+.button {
+  color: #ffffff;
+  font-family: "Segoe UI";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  -webkit-box-shadow: -4px 3px 2px 2px rgba(122, 28, 122, 0.17), inset -7px 6px 3px rgba(150, 35, 150, 0.07);
+          box-shadow: -4px 3px 2px 2px rgba(122, 28, 122, 0.17), inset -7px 6px 3px rgba(150, 35, 150, 0.07);
+  border-radius: 5px;
+  background-color: #962396;
+  cursor: pointer;
+  width: 400px;
+  height: 85px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .section-law {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .law-a {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  .law-text {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 500px) {
+  .button {
+    width: 300px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 350px) {
+  .law-text {
+    font-size: 20px;
+  }
+}
+
+/*Стили для header */
+.header {
+  background-image: url(../img/header/background.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-top: 80px;
+  padding-bottom: 170px;
+  background-size: cover;
+}
+
+.header-title {
+  text-shadow: -4px 3px 0 rgba(152, 39, 152, 0.31);
+  color: #982798;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 220px;
+}
+
+.header-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 75px;
+}
+
+.header-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-top: 11px;
+}
+
+.header-info__text {
+  color: #090909;
+  font-family: "Segoe UI Semibold";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 48px;
+  margin-left: 16px;
+  max-width: 684px;
+}
+
+.header-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.header-text__title {
+  text-shadow: -4px 4px 5px rgba(155, 31, 31, 0.13);
+  color: #a12e2e;
+  font-family: "Segoe UI";
+  font-size: 72px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+}
+
+.header-text__italic {
+  font-family: "Segoe UI Semibold";
+  font-size: 60px;
+  font-weight: 400;
+  color: #a12e2e;
+  margin-top: 45px;
+}
+
+.header-text__number {
+  font-family: "Segoe UI";
+  font-weight: 700;
+}
+
+.header-text__text {
+  color: #161616;
+  font-family: "Segoe UI Semibold";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  display: inline-block;
+  margin-bottom: 50px;
+  margin-top: 110px;
+  max-width: 743px;
+}
+
+.header-text__bold {
+  font-family: "Segoe UI";
+  font-weight: 700;
+  display: inline-block;
+}
+
+@media (max-width: 1840px) {
+  .header {
+    padding-bottom: 85px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header {
+    background-size: cover;
+    background-position: center;
+  }
+  .header-title {
+    margin-bottom: 100px;
+  }
+  .header-item {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 0px;
+  }
+  .header-info {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-title {
+    margin-bottom: 50px;
+  }
+  .header-info__text {
+    font-size: 30px;
+  }
+  .header-text__title {
+    font-size: 48px;
+  }
+  .header-text__italic {
+    font-size: 48px;
+    margin-top: 40px;
+  }
+  .header-text__text {
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-info__text {
+    font-size: 24px;
+  }
+  .header-text__text {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-title {
+    font-size: 36px;
+  }
+  .header-info__text {
+    font-size: 20px;
+    margin-left: 0px;
+  }
+  .header-info__check {
+    display: none;
+  }
+  .header-text__title {
+    font-size: 36px;
+  }
+  .header-text__italic {
+    font-size: 36px;
+  }
+  .header-text__text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 350px) {
+  .header-title {
+    font-size: 30px;
+  }
+  .header-info__text {
+    font-size: 16px;
+  }
+  .header-text__title {
+    font-size: 30px;
+  }
+  .header-text__italic {
+    font-size: 30px;
+  }
+  .header-text__text {
+    font-size: 16px;
+  }
+}
+
+/*Стили для result*/
+.section-result {
+  margin-top: 100px;
+}
+
+.result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.result-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 130px;
+}
+
+.result-item:first-child {
+  margin-top: 0px;
+}
+
+.result-item__text {
+  margin-left: 35px;
+  color: #000000;
+  font-family: "Segoe UI";
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 60px;
+  max-width: 600px;
+}
+
+@media (max-width: 1700px) {
+  .result-img {
+    width: 500px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .result {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .result-block {
+    margin-top: 50px;
+  }
+  .result-item {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .section-result {
+    margin-top: 20px;
+  }
+  .result-item__text {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-result {
+    margin-top: 0px;
+  }
+  .result-img {
+    width: auto;
+  }
+  .result-item__img {
+    width: 70px;
+  }
+  .result-item__text {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 500px) {
+  .result-block {
+    margin-top: 40px;
+  }
+  .result-item {
+    margin-top: 50px;
+  }
+  .result-item__img {
+    width: 50px;
+  }
+  .result-item__text {
+    font-size: 20px;
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 350px) {
+  .result-item__text {
+    font-size: 16px;
+  }
+}
+
+/*Стили для task*/
+.section-task {
+  margin-top: 100px;
+  padding-top: 130px;
+  padding-bottom: 85px;
+  background-image: url(../img/task/background.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: rgba(215, 150, 194, 0.05);
+}
+
+.task-title {
+  color: #ab4c4b;
+  font-family: "Segoe UI";
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+  max-width: 865px;
+}
+
+.task-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 92px;
+}
+
+.task-button {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.task-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 75px;
+}
+
+.task-item:first-child {
+  margin-top: 0px;
+}
+
+.task-item__text {
+  color: #000000;
+  font-family: "Segoe UI";
+  font-size: 40px;
+  font-weight: 400;
+  margin-left: 48px;
+}
+
+.task-item__end {
+  line-height: 72px;
+}
+
+@media (max-width: 1500px) {
+  .section-task {
+    background-image: none;
+  }
+}
+
+@media (max-width: 1050px) {
+  .section-task {
+    margin-top: 50px;
+    padding-top: 50px;
+  }
+  .task-title {
+    width: auto;
+  }
+  .task-all {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .task-button {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-top: 40px;
+  }
+  .task-item {
+    margin-top: 50px;
+  }
+  .task-item__text {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-task {
+    margin-top: 30px;
+    padding-top: 30px;
+  }
+  .task-title {
+    font-size: 36px;
+  }
+  .task-item__img {
+    width: 50px;
+  }
+  .task-item__text {
+    font-size: 24px;
+    margin-left: 30px;
+  }
+  .task-item__end {
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .task-all {
+    margin-top: 60px;
+  }
+  .task-item {
+    margin-top: 40px;
+  }
+  .task-item__text {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  .task-title {
+    font-size: 30px;
+    line-height: 46px;
+  }
+}
+
+@media (max-width: 400px) {
+  .task-title {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 350px) {
+  .task-title {
+    font-size: 24px;
+  }
+  .task-button {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .task-item__text {
+    font-size: 16px;
+  }
+}
+
+/*Стили для learn*/
+.section-learn {
+  margin-top: 140px;
+  padding-bottom: 150px;
+}
+
+.learn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.learn-button {
+  z-index: 1;
+  position: relative;
+  margin-top: -100px;
+  cursor: pointer;
+}
+
+.learn-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.learn-title {
+  color: #ab4c4b;
+  font-family: "Segoe UI";
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 90px;
+}
+
+.learn-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+}
+
+.learn-item__first {
+  margin-top: 0px;
+}
+
+.learn-item__text {
+  max-width: 675px;
+  color: #000000;
+  font-family: "Segoe UI";
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 60px;
+  margin-left: 65px;
+}
+
+@media (max-width: 1600px) {
+  .learn-left__img {
+    width: 460px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .learn {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .learn-left {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .section-learn {
+    margin-top: 50px;
+    padding-bottom: 50px;
+  }
+  .learn-item__text {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-learn {
+    padding-bottom: 50px;
+  }
+  .learn-button {
+    margin-top: 0px;
+  }
+  .learn-left__img {
+    display: none;
+  }
+  .learn-title {
+    font-size: 36px;
+    margin-bottom: 60px;
+  }
+  .learn-item__img {
+    width: 50px;
+  }
+  .learn-item__text {
+    font-size: 24px;
+    margin-left: 30px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .learn-title {
+    font-size: 30px;
+  }
+  .learn-item {
+    margin-top: 40px;
+  }
+  .learn-item__first {
+    margin-top: 0px;
+  }
+  .learn-item__text {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .learn-title {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 350px) {
+  .learn-title {
+    font-size: 24px;
+  }
+  .learn-item__text {
+    font-size: 16px;
+  }
+}
+
+/*Стили для action*/
+.section-action {
+  padding-top: 98px;
+  padding-bottom: 70px;
+  background-color: rgba(215, 150, 194, 0.05);
+}
+
+.action-title {
+  color: #ab4c4b;
+  font-family: "Segoe UI Semibold", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 72px;
+  max-width: 590px;
+  margin-bottom: 125px;
+}
+
+.action-title__black {
+  font-weight: 700;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.action-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.action-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.action-list__nav1 {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.action-list__nav2 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.action-list__nav3 {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.action-list:last-child {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.action-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.action-button {
+  margin-right: 370px;
+}
+
+.action-number {
+  color: #ab4c4b;
+  font-family: "Segoe UI Semibold", sans-serif;
+  font-size: 80px;
+  font-weight: 400;
+  margin-right: 40px;
+}
+
+.action-text {
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  line-height: 48px;
+  max-width: 432px;
+}
+
+.action-text__bold {
+  font-family: "Segoe UI Semibold", sans-serif;
+  font-weight: 600;
+}
+
+@media (max-width: 1400px) {
+  .action-nav {
+    margin-left: 20px;
+    margin-right: 40px;
+  }
+  .action-button {
+    margin-right: 0px;
+  }
+  .action-list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .action-list:last-child {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (max-width: 1140px) {
+  .action-text {
+    font-size: 24px;
+  }
+  .action-button {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .action-title {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .action-button {
+    margin-right: 0px;
+  }
+  .action-nav {
+    display: none;
+  }
+  .action-item {
+    margin-top: 50px;
+  }
+  .action-item__first {
+    margin-top: 0px;
+  }
+  .action-list {
+    margin-top: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .action-list__nav1 {
+    display: none;
+  }
+  .action-list__nav2 {
+    display: none;
+  }
+  .action-list__nav3 {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-action {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .action-title {
+    font-size: 36px;
+    margin-bottom: 60px;
+    width: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .action-title {
+    font-size: 26px;
+    line-height: 46px;
+  }
+  .action-item {
+    margin-top: 40px;
+  }
+  .action-item__first {
+    margin-top: 0px;
+  }
+  .action-text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .action-number {
+    font-size: 50px;
+    margin-right: 25px;
+  }
+}
+
+@media (max-width: 350px) {
+  .action-title {
+    font-size: 24px;
+  }
+  .action-text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+/*Стили для good*/
+.section-good {
+  padding-top: 135px;
+  padding-bottom: 190px;
+}
+
+.good {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.good-button {
+  margin-top: 54px;
+}
+
+.good-title {
+  color: #ab4c4b;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+
+.good-subtitle {
+  color: #ab4c4b;
+  font-family: "Segoe UI Semibold", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 110px;
+}
+
+.good-round {
+  width: 26px;
+  height: 26px;
+  border: 1px dotted #000000;
+  background-color: #962396;
+  border-radius: 50%;
+  margin-right: 35px;
+}
+
+.good-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 50px;
+}
+
+.good-item__first {
+  margin-top: 0px;
+}
+
+.good-txt {
+  color: #000000;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  max-width: 470px;
+}
+
+@media (max-width: 1450px) {
+  .good {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .good-subtitle {
+    margin-bottom: 50px;
+  }
+  .good-text {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-good {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .good-title {
+    font-size: 36px;
+  }
+  .good-txt {
+    font-size: 24px;
+    max-width: 400px;
+  }
+  .good-round {
+    margin-right: 25px;
+  }
+  .good-item {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 540px) {
+  .good-title {
+    font-size: 30px;
+  }
+  .good-subtitle {
+    font-size: 30px;
+  }
+  .good-txt {
+    max-width: 300px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 420px) {
+  .good-round {
+    width: 20px;
+    height: 20px;
+  }
+  .good-txt {
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 390px) {
+  .good-txt {
+    max-width: 260px;
+  }
+}
+
+@media (max-width: 350px) {
+  .good-title {
+    font-size: 24px;
+  }
+  .good-subtitle {
+    font-size: 24px;
+  }
+  .good-txt {
+    font-size: 16px;
+    max-width: 210px;
+  }
+}
+
+/*Стили для footer*/
+.footer {
+  padding-top: 85px;
+  padding-bottom: 80px;
+  background-color: rgba(215, 150, 194, 0.05);
+}
+
+.footer-title {
+  max-width: 1070px;
+  color: #ab4c4b;
+  font-family: "Segoe UI Semibold", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 72px;
+}
+
+.footer-title__bold {
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 700;
+}
+
+.footer-item {
+  background-image: url(../img/footer/background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  width: 826px;
+  height: 459px;
+  margin-top: 98px;
+}
+
+.footer-text {
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  max-width: 408px;
+  text-align: center;
+}
+
+.footer-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #f3f3f3;
+  font-family: "Segoe UI";
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  margin-top: 100px;
+}
+
+.footer-button__green {
+  width: 224px;
+  height: 81px;
+  background-color: #00b000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 60px;
+  cursor: pointer;
+}
+
+.footer-button__red {
+  width: 224px;
+  height: 81px;
+  background-color: #cb0000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer-subtitle {
+  color: #000000;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 18px;
+}
+
+.footer-a {
+  color: #000000;
+  font-family: "Segoe UI Semibold", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+@media (max-width: 1000px) {
+  .footer-item {
+    width: 700px;
+  }
+  .footer-button {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 800px) {
+  .footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .footer-button__red {
+    width: 160px;
+  }
+  .footer-button__green {
+    width: 160px;
+  }
+  .footer-title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .footer-item {
+    width: auto;
+    background-image: none;
+    height: auto;
+    margin-top: 60px;
+  }
+  .footer-subtitle {
+    font-size: 24px;
+  }
+  .footer-a {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-item {
+    margin-top: 50px;
+  }
+  .footer-title {
+    font-size: 24px;
+  }
+  .footer-text {
+    font-size: 24px;
+  }
+  .footer-button {
+    font-size: 24px;
+  }
+  .footer-button__green {
+    width: 130px;
+    height: 60px;
+  }
+  .footer-button__red {
+    width: 130px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer-button__green {
+    margin-right: 30px;
+  }
+  .footer-title {
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 350px) {
+  .footer-button__green {
+    width: 120px;
+  }
+  .footer-button__red {
+    width: 120px;
+  }
+}
+
+/*Стили для modal*/
+.overlay {
+  position: fixed;
+  z-index: 5;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* затемнение фона */
+  display: none;
+  text-align: center;
+}
+
+.overlay__input {
+  margin-top: 50px;
+  width: 362px;
+  height: 60px;
+}
+
+.overlay__button {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  background-color: #f93d3d;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 22px 20px 22px 20px;
+}
+
+.overlay__button-img {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.overlay.active {
+  display: block;
+}
+
+.overlay .flex-popap {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.overlay .flex-popap .popap {
+  position: relative;
+  background-color: #fff;
+  /* цвет фона всплывающего блока */
+  margin: 0 10px;
+  width: 754px;
+  height: 550px;
+}
+
+.popap span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.mod__conf {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.mod__label {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+@media (max-width: 800px) {
+  .mod__conf {
+    font-size: 10px;
+  }
+  .overlay__button {
+    font-size: 20px;
+    padding: 10px 15px;
+  }
+  .overlay__title {
+    font-size: 26px;
+  }
+  .overlay__input {
+    font-size: 24px;
+    width: 300px;
+  }
+  .overlay .flex-popap .popap {
+    height: 540px;
+  }
+}
+
+@media (max-width: 500px) {
+  .overlay .flex-popap .popap {
+    height: 400px;
+  }
+  .overlay-round {
+    display: none;
+  }
+}
+
+.mm-survey {
+  margin-top: 75px;
+  margin-bottom: 50px;
+}
+
+input {
+  outline: none;
+  width: 200px;
+  height: 20px;
+}
+
+.mm-survey-container {
+  width: 100%;
+  min-height: 350px;
+  background: #fafafa;
+}
+
+.button-div {
+  cursor: pointer;
+}
+
+.mm-survey-results-container {
+  width: 100%;
+  min-height: 600px;
+  background: #fafafa;
+}
+
+.mm-survey-page {
+  display: none;
+  font-family: 'Segoe UI Semibold';
+  font-weight: 100;
+  padding: 40px;
+}
+
+.mm-survey-page.active {
+  display: block;
+}
+
+.mm-survey-controller {
+  position: absolute;
+  height: 70px;
+  background: #333;
+  padding: 12px 14px;
+  width: 96.3%;
+  bottom: 0;
+}
+
+.mm-survey-results-controller {
+  position: relative;
+  height: 60px;
+  background: #333;
+  padding: 12px 14px;
+}
+
+.mm-back-btn {
+  display: inline-block;
+  position: relative;
+  float: left;
+}
+
+.mm-prev-btn {
+  display: inline-block;
+  position: relative;
+  float: left;
+}
+
+.mm-next-btn {
+  display: inline-block;
+  opacity: 0.25;
+  position: relative;
+  float: right;
+  pointer-events: none;
+}
+
+.mm-finish-btn {
+  display: none;
+  position: relative;
+  float: right;
+}
+
+.mm-finish-btn button {
+  background: #3DD2AF !important;
+  color: #fff;
+}
+
+.mm-survey-controller .button-div {
+  background-color: #962396;
+  border: none;
+  color: #ffffff;
+  font-family: "Segoe UI Semibold";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  -webkit-box-shadow: -4px 3px 2px 2px rgba(122, 28, 122, 0.17), inset -7px 6px 3px rgba(150, 35, 150, 0.07);
+  box-shadow: -4px 3px 2px 2px rgba(122, 28, 122, 0.17), inset -7px 6px 3px rgba(150, 35, 150, 0.07);
+  border-radius: 5px;
+  padding: 8px 18px;
+}
+
+.mm-survey-results-controller .button-div {
+  background-color: #962396;
+  border: none;
+  padding: 8px 18px;
+}
+
+.mm-survey-progress {
+  width: 100%;
+  height: 30px;
+  background: #f5f5f5;
+  overflow: hidden;
+}
+
+.mm-progress {
+  -webkit-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+}
+
+.mm-survey-progress-bar {
+  height: 30px;
+  width: 0%;
+  background: -webkit-gradient(linear, right top, left top, from(#4CB8C4), to(#3CD3AD));
+  background: linear-gradient(to left, #4CB8C4, #3CD3AD);
+}
+
+.mm-survey-q {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.mm-survey-q li {
+  display: block;
+  /*padding: 20px 0px;*/
+  margin-bottom: 10px;
+  width: 100%;
+  background: #fff;
+}
+
+.mm-survey-q li input {
+  width: 100%;
+}
+
+.mm-survery-content label {
+  width: 100%;
+  padding: 10px 10px;
+  margin: 0px !important;
+}
+
+.mm-survery-content label:hover {
+  cursor: pointer;
+}
+
+.mm-survey-question {
+  min-height: 100px;
+}
+
+.mm-survey-question p {
+  font-size: 26px;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 600;
+  color: #000000;
+  padding-bottom: 30px;
+  width: 86%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.mm-survery-content label p {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  left: 5px;
+  margin: 0px;
+}
+
+.mm-prev-btn button:focus, .mm-next-btn button:focus, .mm-finish-btn button:focus {
+  outline: none;
+  border: none;
+}
+
+.mm-survey.okay .mm-next-btn {
+  display: inline-block;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mm-finish-btn.active {
+  display: inline-block;
+}
+
+.mm-survey-results {
+  display: none;
+}
+
+.mm-survey-results-score {
+  margin: 0px;
+  padding: 0px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  font-size: 80px;
+  font-family: 'Raleway';
+  font-weight: 600;
+  letter-spacing: -6px;
+}
+
+.mm-survey-results-list {
+  list-style-type: none;
+  padding: 0px 15px;
+  margin: 0px;
+}
+
+.mm-survey-results-item {
+  color: #fff;
+  margin-top: 10px;
+  padding: 15px 15px 15px 0px;
+  font-family: 'Raleway';
+  font-weight: 300;
+}
+
+.mm-survey-results-item.correct {
+  background: -webkit-gradient(linear, right top, left top, from(#4CB8C4), to(#3CD3AD));
+  background: linear-gradient(to left, #4CB8C4, #3CD3AD);
+}
+
+.mm-survey-results-item.incorrect {
+  background: -webkit-gradient(linear, right top, left top, from(#d33c62), to(#dc1144));
+  background: linear-gradient(to left, #d33c62, #dc1144);
+}
+
+.mm-item-number {
+  height: 40px;
+  position: relative;
+  padding: 17px;
+  background: #333;
+  color: #fff;
+}
+
+.mm-item-info {
+  float: right;
+}
+
+@media (max-width: 800px) {
+  .mm-survey-controller {
+    position: relative;
+    width: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .mm-survey-page {
+    padding-bottom: 60px;
+    padding-top: 20px;
+  }
+  .mm-survey-question {
+    min-height: 70px;
+  }
+  .mm-survey-controller .button-div {
+    padding: 5px;
+  }
+  .mm-survey-question p {
+    font-size: 18px;
+    width: 90%;
+  }
+  .mm-survey-container {
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 340px) {
+  .mm-survey-controller .button-div {
+    line-height: 16px;
+  }
+  .button-div {
+    width: 100px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

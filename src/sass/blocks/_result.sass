@@ -1,0 +1,74 @@
+.section-result
+  margin-top: 100px
+.result
+  display: flex
+  justify-content: space-around
+  flex-wrap: wrap
+  align-items: center
+  &-item
+    display: flex
+    align-items: center
+    margin-top: 130px
+    &:first-child
+      margin-top: 0px
+    &__text
+      margin-left: 35px
+      color: #000000
+      font-family: "Segoe UI"
+      font-size: 40px
+      font-weight: 400
+      line-height: 60px
+      max-width: 600px
+
+@media (max-width: 1700px)
+  .result
+    &-img
+      width: 500px
+
+@media (max-width: 1500px)
+  .result
+    flex-direction: column
+    align-items: center
+    &-block
+      margin-top: 50px
+    &-item
+      margin-top: 60px
+
+@media (max-width: 1050px)
+  .section-result
+    margin-top: 20px
+  .result
+    &-item
+      &__text
+        font-size: 30px
+
+@media (max-width: 768px)
+  .section-result
+    margin-top: 0px
+  .result
+    &-img
+      width: auto
+    &-item 
+      &__img
+        width: 70px
+      &__text
+        font-size: 24px
+        line-height: 28px
+
+@media (max-width: 500px)
+  .result
+    &-block
+      margin-top: 40px
+    &-item
+      margin-top: 50px
+      &__img
+        width: 50px
+      &__text
+        font-size: 20px
+        margin-left: 15px
+
+@media (max-width: 350px)
+  .result
+    &-item
+      &__text
+        font-size: 16px

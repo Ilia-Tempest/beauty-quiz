@@ -1,0 +1,281 @@
+.mm-survey {
+	margin-top: 75px;
+	margin-bottom: 50px;
+}
+
+input {
+	outline: none;
+	width: 200px;
+	height: 20px;
+}
+.mm-survey-container {
+	width: 100%;
+	min-height: 350px;
+	background: #fafafa;
+}
+
+.button-div {
+	cursor: pointer;
+
+}
+
+.mm-survey-results-container {
+	width: 100%;
+	min-height: 600px;
+	background: #fafafa;
+}
+
+.mm-survey-page {
+	display: none;
+	font-family: 'Segoe UI Semibold';
+	font-weight: 100;
+	padding: 40px;
+}
+
+.mm-survey-page.active {
+	display: block;
+}
+
+.mm-survey-controller {
+	position: absolute;
+    height: 70px;
+    background: #333;
+    padding: 12px 14px;
+    width: 96.3%;
+    bottom: 0;
+}
+
+.mm-survey-results-controller {
+	position: relative;
+    height: 60px;
+    background: #333;
+    padding: 12px 14px;
+}
+
+.mm-back-btn {
+	display: inline-block;
+    position: relative;
+    float: left;
+}
+
+.mm-prev-btn {
+	display: inline-block;
+    position: relative;
+    float: left;
+}
+
+.mm-next-btn {
+	display: inline-block;
+	opacity: 0.25;
+    position: relative;
+		float: right;
+		pointer-events: none;
+}
+
+.mm-finish-btn {
+	display: none;
+    position: relative;
+    float: right;
+}
+
+.mm-finish-btn button {
+	background: #3DD2AF !important;
+    color: #fff;
+}
+
+.mm-survey-controller .button-div {
+	background-color: #962396;
+    border: none;
+		color: #ffffff;
+    font-family: "Segoe UI Semibold";
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    -webkit-box-shadow: -4px 3px 2px 2px rgba(122, 28, 122, 0.17), inset -7px 6px 3px rgba(150, 35, 150, 0.07);
+    box-shadow: -4px 3px 2px 2px rgba(122, 28, 122, 0.17), inset -7px 6px 3px rgba(150, 35, 150, 0.07);
+		border-radius: 5px;
+		padding: 8px 18px;
+}
+
+.mm-survey-results-controller .button-div {
+	background-color: #962396;
+	border: none;
+	padding: 8px 18px;
+}
+
+.mm-survey-progress {
+	width: 100%;
+	height: 30px;
+	background: #f5f5f5;
+	overflow: hidden;
+}
+
+.mm-progress {
+	transition: width 0.5s ease-in-out;
+}
+
+.mm-survey-progress-bar {
+	height: 30px;
+    width: 0%;
+    background: linear-gradient(to left, #4CB8C4, #3CD3AD);
+}
+
+.mm-survey-q {
+	list-style-type: none;
+	padding: 0px;
+}
+
+.mm-survey-q li {
+	display: block;
+	/*padding: 20px 0px;*/
+	margin-bottom: 10px;
+	width: 100%;
+	background: #fff;
+}
+
+.mm-survey-q li input {
+	width: 100%;
+}
+
+.mm-survery-content label {
+	width: 100%;
+	padding: 10px 10px;
+	margin: 0px !important;
+}
+
+.mm-survery-content label:hover {
+	cursor: pointer;
+}
+
+.mm-survey-question {
+	min-height: 100px;
+}
+
+.mm-survey-question p {
+	font-size: 26px;
+	font-family: "Segoe UI", sans-serif;
+	font-weight: 600;
+	color: #000000;
+	padding-bottom: 30px;
+	width: 86%;
+	margin: auto;
+	margin-top: 30px;
+    
+}
+
+.mm-survery-content label p {
+	display: inline-block;
+    position: relative;
+    top: 2px;
+    left: 5px;
+    margin: 0px;
+}
+
+
+
+.mm-survey-item {
+
+}
+
+.mm-prev-btn button:focus, .mm-next-btn button:focus, .mm-finish-btn button:focus {
+	outline: none;
+	border: none;
+}
+
+.mm-survey.okay .mm-next-btn {
+	display: inline-block;
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.mm-finish-btn.active {
+	display: inline-block;
+}
+
+.mm-survey-results {
+	display: none;
+}
+
+.mm-survey-results-score {
+	margin: 0px;
+    padding: 0px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Raleway';
+    font-weight: 600;
+    letter-spacing: -6px;
+}
+
+.mm-survey-results-list {
+	list-style-type: none;
+	padding: 0px 15px;
+    margin: 0px;
+}
+
+.mm-survey-results-item {
+	color: #fff;
+    margin-top: 10px;
+    padding: 15px 15px 15px 0px;
+    font-family: 'Raleway';
+    font-weight: 300;
+}
+
+.mm-survey-results-item.correct {
+	background: linear-gradient(to left, #4CB8C4, #3CD3AD);
+}
+
+.mm-survey-results-item.incorrect {
+	background: linear-gradient(to left, #d33c62, #dc1144);
+}
+
+.mm-item-number {
+	height: 40px;
+	position: relative;
+	padding: 17px;
+	background: #333;
+	color: #fff;
+}
+
+.mm-item-info {
+	float: right;
+}
+
+@media (max-width: 800px) {
+	.mm-survey-controller {
+	 position: relative;
+	 width: auto;
+	}
+}
+
+@media (max-width: 500px) {
+	.mm-survey-page {
+		padding-bottom: 60px;
+		padding-top: 20px;
+	}
+	.mm-survey-question {
+		min-height: 70px;
+	}
+	.mm-survey-controller .button-div {
+		padding: 5px;
+	}
+	.mm-survey-question p {
+		font-size: 18px;
+		width: 90%;
+	}
+	.mm-survey-container {
+		min-height: 200px;
+	}
+}
+
+@media (max-width: 340px) {
+	.mm-survey-controller .button-div {
+		line-height: 16px;
+	}
+  .button-div {
+		width: 100px;
+	
+	}
+}

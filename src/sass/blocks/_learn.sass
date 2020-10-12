@@ -1,0 +1,102 @@
+.section-learn
+  margin-top: 140px
+  padding-bottom: 150px
+.learn
+  display: flex
+  justify-content: space-between
+  &-button
+    z-index: 1
+    position: relative
+    margin-top: -100px
+    cursor: pointer
+  &-right
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+  &-title
+    color: #ab4c4b
+    font-family: "Segoe UI"
+    font-size: 48px
+    font-weight: 700
+    margin-bottom: 90px
+  &-item
+    display: flex
+    align-items: center
+    margin-top: 50px
+    &__first
+      margin-top: 0px
+    &__text
+      max-width: 675px
+      color: #000000
+      font-family: "Segoe UI"
+      font-size: 40px
+      font-weight: 400
+      line-height: 60px
+      margin-left: 65px
+
+@media (max-width: 1600px)
+  .learn
+    &-left
+      &__img
+        width: 460px
+
+@media (max-width: 1500px)
+  .learn
+    flex-direction: column-reverse
+    align-items: center
+    &-left
+      margin-top: 40px
+
+@media (max-width: 1050px)
+  .section-learn
+    margin-top: 50px
+    padding-bottom: 50px
+  .learn
+    &-item
+      &__text
+        font-size: 30px
+
+@media (max-width: 768px)
+  .section-learn
+    padding-bottom: 50px
+  .learn
+    &-button
+      margin-top: 0px
+    &-left
+      &__img
+        display: none
+    &-title
+      font-size: 36px
+      margin-bottom: 60px
+    &-item
+      &__img
+        width: 50px
+      &__text
+        font-size: 24px
+        margin-left: 30px
+        line-height: 30px
+
+@media (max-width: 500px)
+  .learn
+    &-title
+      font-size: 30px
+    &-item
+      margin-top: 40px
+      &__first
+        margin-top: 0px
+      &__text
+        font-size: 20px
+        margin-left: 20px
+
+@media (max-width: 400px)
+  .learn
+    &-title
+      font-size: 26px
+
+@media (max-width: 350px)
+  .learn
+    &-title
+      font-size: 24px
+    &-item 
+      &__text
+        font-size: 16px

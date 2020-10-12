@@ -1,0 +1,137 @@
+.footer
+  padding-top: 85px
+  padding-bottom: 80px
+  background-color: rgba(215, 150, 194, 0.05)
+  &-title
+    max-width: 1070px
+    color: #ab4c4b
+    font-family: "Segoe UI Semibold", sans-serif
+    font-size: 48px
+    font-weight: 400
+    line-height: 72px
+    &__bold
+      font-family: "Segoe UI", sans-serif
+      font-weight: 700
+  &-item
+    background-image: url(../img/footer/background.png)
+    background-repeat: no-repeat
+    background-size: contain
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    margin: auto
+    width: 826px
+    height: 459px
+    margin-top: 98px
+  &-text
+    font-family: "Segoe UI", sans-serif
+    font-weight: 600
+    font-size: 36px
+    max-width: 408px
+    text-align: center
+  &-button
+    display: flex
+    color: #f3f3f3
+    font-family: "Segoe UI"
+    font-size: 30px
+    font-weight: 700
+    text-transform: uppercase
+    letter-spacing: 0.3px
+    margin-top: 100px
+    &__green
+      width: 224px
+      height: 81px
+      background-color:#00b000
+      display: flex
+      align-items: center
+      justify-content: center
+      margin-right: 60px
+      cursor: pointer
+    &__red
+      width: 224px
+      height: 81px
+      background-color: #cb0000
+      display: flex
+      align-items: center
+      justify-content: center
+      cursor: pointer
+  &-bottom
+    text-align: center
+    margin-top: 40px
+  &-subtitle
+    color: #000000
+    font-family: "Segoe UI", sans-serif
+    font-size: 30px
+    font-weight: 400
+    margin-bottom: 18px
+  &-a
+    color: #000000
+    font-family: "Segoe UI Semibold", sans-serif
+    font-size: 30px
+    font-weight: 400
+
+@media (max-width: 1000px)
+  .footer
+    &-item
+      width: 700px
+    &-button
+      margin-top: 50px
+
+@media (max-width: 800px)
+  .footer
+    padding-top: 50px
+    padding-bottom: 50px
+  .footer
+    &-button
+      &__red
+        width: 160px
+      &__green
+        width: 160px
+    &-title
+      font-size: 36px
+      line-height: 40px
+    &-item
+      width: auto
+      background-image: none
+      height: auto
+      margin-top: 60px
+    &-subtitle
+      font-size: 24px
+    &-a
+      font-size: 24px
+
+@media (max-width: 500px)
+  .footer
+    &-item
+      margin-top: 50px
+    &-title
+      font-size: 24px
+    &-text
+      font-size: 24px
+    &-button
+      font-size: 24px
+      &__green
+        width: 130px
+        height: 60px
+      &__red
+        width: 130px
+        height: 60px
+
+@media (max-width: 400px)
+  .footer
+    &-button
+      &__green
+        margin-right: 30px
+    &-title
+      line-height: 30px
+
+@media (max-width: 350px)
+  .footer
+    &-button
+      &__green
+        width: 120px 
+      &__red
+        width: 120px
+
+    

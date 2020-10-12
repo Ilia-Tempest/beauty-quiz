@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Онлайн бизнес игра</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicon.ico">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-block">
+        <div class="header-title">Онлайн бизнес - игра</div>
+        <!-- /.header-title -->
+      <div class="header-item">
+
+        <div class="header-text">
+          <span class="header-text__title">Эксперт красоты</span> 
+          <!-- /.header-text__title -->
+          <span class="header-text__italic">за <i class="header-text__number">12</i> дней</span> <!-- /.header-text__italic -->
+          <p class="header-text__text">
+            Пройдите простой тест и получите готовую 
+            систему развития бизнеса: 
+            <span class="header-text__bold">сайт + маркетинг + наставничество</span> <!-- /.header-text__bold -->
+          </p>
+          <!-- /.header-text__text -->
+          <div class="button header-button" onclick="show_popap('modal-1')">
+            пройти тест
+          </div>
+          <!-- /.button header-button -->
+        </div>
+        <!-- /.header-text -->
+        <div class="header-info">
+          <img src="img/header/check.svg" alt="" class="header-info__check">
+          <div class="header-info__text">
+            Новая онлайн бизнес - игра по сохранению 
+            красоты и заработку на антивозрастной 
+            технологии
+          </div>
+          <!-- /.header-info__text -->
+        </div>
+        <!-- /.header-info -->
+      </div>
+      <!-- /.header-item -->
+
+      </div>
+      <!-- /.header-block -->
+    </div>
+    <!-- /.container -->
+  </header>
+  <!-- /.header -->
+
+  <main class="main">
+    <section class="section section-result">
+      <div class="container">
+        <div class="result">
+         <img src="img/result/woman.png" alt="" class="result-img">
+         <div class="result-block">
+           <div class="result-item">
+             <img src="img/result/one.svg" alt="" class="result-item__img">
+             <div class="result-item__text">Станьте экспертом женской  молодости, красоты и здоровья за 12 дней</div>
+             <!-- /.result-item__text -->
+           </div>
+           <!-- /.result-item -->
+           <div class="result-item">
+             <img src="img/result/two.svg" alt="" class="result-item__img">
+             <div class="result-item__text">Ощутите эффект на себе: сбросите 7-10 лет возраста со своего лица.</div>
+             <!-- /.result-item__text -->
+           </div>
+           <!-- /.result-item -->
+           <div class="result-item">
+             <img src="img/result/three.svg" alt="" class="result-item__img">
+             <div class="result-item__text">Узнаете, как зарабатывать от 60 000р на приобретенной экспертности </div>
+             <!-- /.result-item__text -->
+           </div>
+           <!-- /.result-item -->
+         </div>
+         <!-- /.result-block -->
+        </div>
+        <!-- /.result -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section section-result -->
+
+    <section class="section section-task">
+      <div class="container">
+        <div class="task">
+          <div class="task-title">Простые задания на каждый день, поддержка наставника и окружение помогут достичь новых высот</div>
+          <!-- /.task-title -->
+          <div class="task-all">
+          <div class="task-block">
+            <div class="task-item">
+              <img class="task-item__img" src="img/task/one.svg" alt="">
+              <div class="task-item__text">Выполнение 3 простых заданий ежедневно</div>
+              <!-- /.task-item__text -->
+            </div>
+            <!-- /.task-item -->
+            <div class="task-item">
+              <img class="task-item__img" src="img/task/two.svg" alt="">
+              <div class="task-item__text">Отчёт в социальных сетях и наставнику</div>
+              <!-- /.task-item__text -->
+            </div>
+            <!-- /.task-item -->
+            <div class="task-item">
+              <img class="task-item__img" src="img/task/three.svg" alt="">
+              <div class="task-item__text task-item__end">Работа в окружении, которое хочет <br> развиваться в бизнесе</div>
+              <!-- /.task-item__text -->
+            </div>
+            <!-- /.task-item -->
+          </div>
+          <!-- /.task-block -->
+         <div onclick="show_popap('modal-1')" class="button task-button">Стать экспертом</div>
+         <!-- /.button task-button -->
+        </div>
+        <!-- /.task-all -->
+        </div>
+        <!-- /.task -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section section-task -->
+
+    <section class="section section-learn">
+      <div class="container">
+        <div class="learn">
+          <div class="learn-left">
+            <img src="img/learn/image.png" alt="" class="learn-left__img">
+            <div class="learn-button button" onclick="show_popap('modal-1')">
+              узнать больше
+            </div>
+            <!-- /.button learn-button -->
+          </div>
+          <!-- /.learn-left -->
+          <div class="learn-right">
+            <div class="learn-title">В онлайн бизнес - игре вы узнаете:</div>
+            <!-- /.learn-title -->
+            <div class="learn-item learn-item__first">
+              <img src="img/learn/one.svg" alt="" class="learn-item__img">
+              <div class="learn-item__text">Как сохранить свою красоту и приумножить её</div>
+              <!-- /.learn-item__text -->
+            </div>
+            <!-- /.learn-item -->
+            <div class="learn-item">
+              <img src="img/learn/two.svg" alt="" class="learn-item__img">
+              <div class="learn-item__text">Как заставить ваши гены молодости работать на Вас</div>
+              <!-- /.learn-item__text -->
+            </div>
+            <!-- /.learn-item -->
+            <div class="learn-item">
+              <img src="img/learn/three.svg" alt="" class="learn-item__img">
+              <div class="learn-item__text">Как начать и развивать собственный бизнес в индустрии красоты</div>
+              <!-- /.learn-item__text -->
+            </div>
+            <!-- /.learn-item -->
+            <div class="learn-item">
+              <img src="img/learn/four.svg" alt="" class="learn-item__img">
+              <div class="learn-item__text">Антивозрастную технологию от компании с 35-ти летним опытом работы на международном рынке</div>
+              <!-- /.learn-item__text -->
+            </div>
+            <!-- /.learn-item -->
+          </div>
+          <!-- /.learn-right -->
+        </div>
+        <!-- /.learn -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section section-learn -->
+
+    <section class="section section-action">
+      <div class="container">
+        <div class="action">
+          <div class="action-title">
+            <span class="action-title__black">7 мощных результатов,</span> 
+            <!-- /.action-title__black -->
+            которые Вы получите в онлайн бизнес-игре
+          </div>
+          <!-- /.action-title -->
+          <div class="action-block">
+            <div class="action-list">
+            <div class="action-item action-item__first">
+              <div class="action-number">1</div>
+              <!-- /.action-number -->
+              <div class="action-text">
+                <span class="action-text__bold">Воспитаете привычку</span> 
+                <!-- /.action-text__bold -->
+                заботиться о своём здоровье и красоте
+              </div>
+              <!-- /.action-text -->
+            </div>
+            <!-- /.action-item -->
+            <img class="action-nav" src="img/action/nav-right.svg" alt="">
+            <div class="action-item">
+              <div class="action-number">2</div>
+              <!-- /.action-number -->
+              <div class="action-text">
+                Узнаете и будете применять 
+                <span class="action-text__bold">безопасные технологии</span> 
+                омоложения
+              </div>
+              <!-- /.action-text -->
+            </div>
+            <!-- /.action-item -->
+          </div>
+          <!-- /.action-list -->
+           <div class="action-list action-list__nav1">
+             <img src="img/action/nav-bright.svg" alt="">
+           </div>
+           <!-- /.action-list -->
+          <div class="action-list">
+            <div class="action-item">
+              <div class="action-number">4</div>
+              <!-- /.action-number -->
+              <div class="action-text">
+                Дополнительный заработок 
+                <span class="action-text__bold">от 60 000руб.</span>
+              </div>
+              <!-- /.action-text -->
+            </div>
+            <!-- /.action-item -->
+            <img class="action-nav" src="img/action/nav-left.svg" alt="">
+            <div class="action-item">
+              <div class="action-number">3</div>
+              <!-- /.action-number -->
+              <div class="action-text">
+                Станете моложе и 
+                <span class="action-text__bold">ощутите на</span> 
+                себе новые
+                <span class="action-text__bold">восхищенные взгляды</span>
+              </div>
+              <!-- /.action-text -->
+            </div>
+             <!-- /.action-item -->
+          </div>
+          <!-- /.action-list -->
+          <div class="action-list action-list__nav2">
+            <img src="img/action/nav-bleft.svg" alt="">
+          </div>
+           
+          <div class="action-list">
+            <div class="action-item">
+              <div class="action-number">5</div>
+              <!-- /.action-number -->
+              <div class="action-text">
+                Освоите
+                <span class="action-text__bold">новую профессию</span> 
+                и станете в ней
+                <span class="action-text__bold">экспертом</span>
+              </div>
+              <!-- /.action-text -->
+            </div>
+            <!-- /.action-item -->
+            <img class="action-nav" src="img/action/nav-right.svg" alt="">
+            <div class="action-item">
+              <div class="action-number">6</div>
+              <!-- /.action-number -->
+              <div class="action-text">
+                Возможность
+                <span class="action-text__bold">зарабатывать</span>
+                через интернет
+              </div>
+              <!-- /.action-text -->
+            </div>
+            <!-- /.action-item -->
+          </div>
+          <!-- /.action-list -->
+          <div class="action-list action-list__nav3">
+            <img src="img/action/nav-bright.svg" alt="">
+          </div>
+          <div class="action-list">
+            <div class="action-item">
+              <div class="button action-button" onclick="show_popap('modal-1')">
+                Получить результат
+              </div>
+              <!-- /.button action-button -->
+            </div>
+            <!-- /.action-item -->
+            <div class="action-item">
+              <div class="action-number">7</div>
+              <!-- /.action-number -->
+              <div class="action-text">Работа с гибким и удобным для вас графиком</div>
+              <!-- /.action-text -->
+            </div>
+            <!-- /.action-item -->
+          </div>
+          <!-- /.action-list -->
+          </div>
+          <!-- /.action-block -->
+        </div>
+        <!-- /.action -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section section-action -->
+
+    <section class="section section-good">
+      <div class="container">
+        <div class="good">
+          <div class="good-image">
+            <img src="img/good/woman.png" alt="" class="good-img">
+          </div>
+          <!-- /.good-image -->
+          <div class="good-text">
+            <div class="good-title">Вам будет полезна игра
+            </div>
+            <!-- /.good-title -->
+            <div class="good-subtitle">Если Вы:</div>
+            <!-- /.good-subtitle -->
+            <div class="good-item good-item__first">
+              <div class="good-round"></div>
+              <!-- /.good-round -->
+              <div class="good-txt">Не знаете, чем заняться в декрете</div>
+              <!-- /.good-txt -->
+            </div>
+            <!-- /.good-item -->
+            <div class="good-item">
+              <div class="good-round"></div>
+              <!-- /.good-round -->
+              <div class="good-txt">Работаете в офисе 5/2</div>
+              <!-- /.good-txt -->
+            </div>
+            <!-- /.good-item -->
+            <div class="good-item">
+              <div class="good-round"></div>
+              <!-- /.good-round -->
+              <div class="good-txt">Решили привести организм в порядок и выглядеть моложе</div>
+              <!-- /.good-txt -->
+            </div>
+            <!-- /.good-item -->
+            <div class="good-item">
+              <div class="good-round"></div>
+              <!-- /.good-round -->
+              <div class="good-txt">Связаны с индустрией красоты</div>
+              <!-- /.good-txt -->
+            </div>
+            <!-- /.good-item -->
+            <div class="good-item">
+              <div class="good-round"></div>
+              <!-- /.good-round -->
+              <div class="good-txt">Добились результата в карьере и хотите развивать новый бизнес - проект</div>
+              <!-- /.good-txt -->
+            </div>
+            <!-- /.good-item -->
+
+            <div class="button good-button" onclick="show_popap('modal-1')">
+              Получить результат
+            </div>
+            <!-- /.button good-button -->
+          </div>
+          <!-- /.good-text -->
+        </div>
+        <!-- /.good -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section section-good -->
+  </main>
+  <!-- /.main -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-block">
+        <div class="footer-title">
+          Пройдите тест
+          <span class="footer-title__bold">прямо сейчас</span> 
+          <!-- /.footer-title__bold -->
+          и забронируйте место в онлайн бизнес - игре
+        </div>
+        <!-- /.footer-title -->
+
+        <div class="footer-item">
+          <div class="footer-text">Вы готовы ставить цели
+            и идти к своей мечте?
+          </div>
+          <!-- /.footer-text -->
+          <div class="footer-button">
+            <div class="footer-button__green" onclick="show_popap('modal-1')">Да</div>
+            <!-- /.footer-button__green -->
+            <div class="footer-button__red">Нет</div>
+            <!-- /.footer-button__red -->
+          </div>
+          <!-- /.footer-button -->
+        </div>
+        <!-- /.footer-item -->
+
+        <div class="footer-bottom">
+          <div class="footer-subtitle">Политика конфиденциальности</div>
+          <!-- /.footer-subtitle -->
+          <a href="law.html" class="footer-a">Все права защищены</a>
+          <!-- /.footer-a -->
+        </div>
+        <!-- /.footer-bottom -->
+      </div>
+      <!-- /.footer-block -->
+    </div>
+    <!-- /.container -->
+  </footer>
+  <!-- /.footer -->
+
+
+  <div class="overlay" id="modal-1">
+    <div class="flex-popap">
+      <div class="popap">
+        <span class="close_popap">
+          <img src="img/modal/close.svg" alt="">
+        </span>
+          
+        <div class="col-sm-12">
+          <div class="mm-survey">
+    
+            <div class="mm-survey-progress">
+              <div class="mm-survey-progress-bar mm-progress"></div>
+            </div>
+    
+            <div class="mm-survey-results">
+              <div class="mm-survery-content">
+                <div class="mm-survey-question">
+                  <p>Если вы на все пункты ответите то я обязательно с вами свяжусь и расскажу как начать играть, жить в удовольствие, оставаться молодой, красивой и быть всегда в развитии.
+                    <br> <br>
+                    Наша цель : ПОМОЧЬ ВАМ УВЕЛИЧИТЬ ВАШИ ДОХОДЫ В 2-3 РАЗА, В ТЕЧЕНИИ 12 МЕСЯЦЕВ.</p>
+                </div>
+               
+               
+              </div>
+             
+            </div>
+    
+            <form action="form/mail.php" method="POST">
+
+            <div class="mm-survey-bottom">
+              <div class="mm-survey-container">
+    
+                <div class="mm-survey-page active" data-page="1">
+                  <div class="mm-survery-content">
+                    <div class="mm-survey-question">
+                      <p>Ваше имя?</p>
+                    </div>
+                    <div class="mm-survey-item">
+                     
+                      <input placeholder="Имя:" type="text" id="radio01" data-item="1" name="user_name"/>
+                   
+                    </div>
+                   
+                  </div>
+                </div>
+                <div class="mm-survey-page" data-page="2">
+                  <div class="mm-survery-content">
+                    <div class="mm-survey-question">
+                      <p>Ваш город?</p>
+                    </div>
+                    <div class="mm-survey-item">
+                     
+                      <input placeholder="Город:" type="text" id="radio05" data-item="2" name="user_city"  />
+                  
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="mm-survey-page" data-page="3">
+                  <div class="mm-survery-content">
+                    <div class="mm-survey-question">
+                      <p>Ватцап тел. Обязательно для связи</p>
+                    </div>
+                    <div class="mm-survey-item">
+                     
+                      <input placeholder="Телефон:" type="tel" id="radio05" data-item="3" name="user_phone"  />
+                     
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="mm-survey-page" data-page="4">
+                  <div class="mm-survery-content">
+                    <div class="mm-survey-question">
+                      <p>На какой уровень дохода вы бы хотели выйти за год, имея инструмент для онлайн бизнеса в индустрии красоты?</p>
+                    </div>
+                    <div class="mm-survey-item">
+                     
+                      <input placeholder="Доход:" type="tel" id="radio05" data-item="4" name="user_money"  />
+                   
+                    </div>
+                    
+                  </div>
+                </div>
+
+                <div class="mm-survey-page" data-page="5">
+                  <div class="mm-survery-content">
+                    <div class="mm-survey-question">
+                      <p>Есть ли у вас опыт в бизнесе?</p>
+                    </div>
+                    <div class="mm-survey-item">
+                     
+                      <input placeholder="Опыт:" type="text" id="radio05" data-item="5" name="user_store"  />
+                   
+                    </div>
+                    
+                  </div>
+                </div>
+
+                <div class="mm-survey-page" data-page="6">
+                  <div class="mm-survery-content">
+                    <div class="mm-survey-question">
+                      <p>Есть ли у вас аккаунт в соц. Сетях?</p>
+                    </div>
+                    <div class="mm-survey-item">
+                     
+                      <input placeholder="Соцсети:" type="text" id="radio05" data-item="6" name="user_mes"  />
+                   
+                    </div>
+                    
+                  </div>
+                </div>
+
+                <div class="mm-survey-page" data-page="7">
+                  <div class="mm-survery-content">
+                    <div class="mm-survey-question">
+                      <p>Какая у вас мечта?</p>
+                    </div>
+                    <div class="mm-survey-item">
+                     
+                      <input placeholder="Мечта:" type="text" id="radio05" data-item="7" name="user_dream"  />
+                   
+                    </div>
+                    
+                  </div>
+                </div>
+
+                
+                <!-- <div class="mm-survey-page" data-page="5">
+                  <div class="mm-survery-content">
+    
+                  </div>
+                </div>
+                <div class="mm-survey-page" data-page="6">
+                  <div class="mm-survery-content">
+    
+                  </div>
+                </div>
+                <div class="mm-survey-page" data-page="7">
+                  <div class="mm-survery-content">
+    
+                  </div>
+                </div> -->
+    
+              </div>
+    
+              <div class="mm-survey-controller">
+                <div class="mm-prev-btn">
+                  <div class="button-div">Предыдущий вопрос</div>
+                </div>
+                <div class="mm-next-btn">
+                  <div class="button-div" disabled="true">Следующий вопрос</div>
+                </div>
+                <div class="mm-finish-btn">
+                  <button class="button-div" type="submit">Отправить</button>
+                </div>
+              </div>
+            </div>
+
+          </form>
+
+          </div>
+        </div>
+          
+
+
+          
+      </div>
+    </div>
+  </div>
+
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous">
+  </script>
+<script src="js/modal.js">
+</script>
+<script src="js/quiz.js"></script>
+</body>
+</html>

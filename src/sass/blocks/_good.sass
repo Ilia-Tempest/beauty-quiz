@@ -1,0 +1,97 @@
+.section-good
+  padding-top: 135px
+  padding-bottom: 190px
+.good
+  display: flex
+  justify-content: space-around
+  align-items: center
+  &-button
+    margin-top: 54px
+  &-title
+    color: #ab4c4b
+    font-family: "Segoe UI", sans-serif
+    font-size: 48px
+    font-weight: 700
+    margin-bottom: 35px
+  &-subtitle
+    color: #ab4c4b
+    font-family: "Segoe UI Semibold", sans-serif
+    font-size: 36px
+    font-weight: 400
+    margin-bottom: 110px
+  &-round
+    width: 26px
+    height: 26px
+    border: 1px dotted #000000
+    background-color: #962396
+    border-radius: 50%
+    margin-right: 35px
+  &-item
+    display: flex
+    align-items: flex-start
+    margin-top: 50px
+    &__first
+      margin-top: 0px
+  &-txt
+    color: #000000
+    font-family: "Segoe UI", sans-serif
+    font-size: 30px
+    font-weight: 400
+    max-width: 470px
+
+@media (max-width: 1450px)
+  .good
+    flex-direction: column
+    align-items: center
+    &-subtitle
+      margin-bottom: 50px
+    &-text
+      margin-top: 50px
+
+@media (max-width: 768px)
+  .section-good
+    padding-top: 50px
+    padding-bottom: 50px
+  .good
+    &-title
+      font-size: 36px
+    &-txt
+      font-size: 24px
+      max-width: 400px
+    &-round
+      margin-right: 25px
+    &-item
+      margin-top: 40px
+     
+@media (max-width: 540px)
+  .good
+    &-title
+      font-size: 30px
+    &-subtitle
+      font-size: 30px
+    &-txt
+      max-width: 300px
+      font-size: 20px
+
+@media (max-width: 420px)
+  .good
+    &-round
+      width: 20px 
+      height: 20px
+    &-txt
+      max-width: 280px
+
+@media (max-width: 390px)
+  .good
+    &-txt
+      max-width: 260px
+
+@media (max-width: 350px)
+  .good
+    &-title
+      font-size: 24px
+    &-subtitle
+      font-size: 24px
+    &-txt
+      font-size: 16px
+      max-width: 210px
